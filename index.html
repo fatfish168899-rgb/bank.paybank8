@@ -331,7 +331,7 @@
                 config.initialTotalSeconds = total; // [NEW] 记录初始总秒数，用于进度条计算
 
                 document.getElementById('copy-amount').innerText = `$${parseFloat(data.real_amount).toFixed(2)}`;
-                document.getElementById('display-order-no').textContent = data.out_order_no || data.order_no;
+                document.getElementById('display-order-no').textContent = data.order_no;
                 document.getElementById('merchant-ref-display').textContent = data.out_order_no || 'N/A';
 
                 // [NEW] 处理侧边面板逻辑 (V28.6)

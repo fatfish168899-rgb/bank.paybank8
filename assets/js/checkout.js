@@ -548,7 +548,7 @@ window.switchBank = async function (bankName, isPick = false) {
             if (document.getElementById('display-bank-name')) document.getElementById('display-bank-name').textContent = bankFullName;
             if (document.getElementById('display-order-no')) {
                 const config = document.getElementById('checkout-config').dataset;
-                document.getElementById('display-order-no').textContent = config.merchantOrderNo || config.orderNo;
+                document.getElementById('display-order-no').textContent = config.orderNo;
             }
 
             // 状态同步 (核心修复：确保 saveQrCode 获取当前银行)
